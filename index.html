@@ -1,75 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Form</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Welcome Page</title>
 </head>
 <body>
-    <div class="form">
-    <h1>SAMPLE FORM</h1>
-    <div id="Name">
-        <label class="wow"><b>Name</b></label><br>
-        <input required type="text" for="Name" placeholder="Enter name" class="but">
-    </div>
-      
-    <div id="Email">
-        <label class="wow"><b>Email</b></label><br>
-        <input required type="email" for="Email" placeholder="Enter email address" class="but">
-    </div>
-      
-    <div id="Age">
-        <label class="wow"><b>Age</b></label><br>
-        <input required type="number" for="Age" placeholder="Enter age" class="but">
-    </div>
-      <br>
-      
-    <div id="Course">
-        <label class="wow"><b>Course  </b></label>
-        <select>
-            <option>None</option>
-            <option>BSED</option>
-            <option>BSHM</option>
-            <option>BEED</option>
-            <option>BSIT</option>
-        </select>
-    </div>
-      <br>
-      
-    <div id="Gender">
-        <label class="wow"><b>Gender</b></label><br>
-        <input type="radio" id="female" name="gender" value="female">
-  <label for="female">Female</label><br>
-  <input type="radio" id="male" name="gender" value="male">
-  <label for="male" class="wow">Male</label><br>  
-    </div>
-      <br>
-      
-    <div id="Hobbies">
-        <label class="wow"><b>Hobbies</b></label><br>
-        <input type="checkbox" value="drawing" name="hobbies">
-  <label for="drawing">Drawing</label><br>
-  <input type="checkbox" name="hobbies" value="wrestle">
-  <label for="wrestle">Wrestle</label><br>  
-  <input type="checkbox" name="hobbies" value="painting">
-  <label for="painting">Painting</label><br>  
-  <input type="checkbox" name="hobbies" value="making Friends">
-  <label for="making Friends">Making Friends</label><br>  
-    </div>
-      <br>
-      
-    <div>
-        <label class="wow"><b>Bio</b></label><br>
-        <textarea required value="bio" placeholder="Say something about yourself..."></textarea>
-    </div>
-    <div class="sumbit">
-        <button type="submit" onclick="ghost()">Submit</button>
-    </div>
-    </div>
+  
+  <h1>WELCOME PAGE!!!</h1>
+  <br>
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" name="name">
+    <button onclick="displayWelcomeMessage()">Submit</button>
+    <p id="welcome-message"></p>
   
   <script src="index.js"></script>
+ 
 
 </body>
-   
 </html>
